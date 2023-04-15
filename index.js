@@ -90,7 +90,7 @@ let pwd1 = document.querySelector("#pwd1");
 let pwd2 = document.querySelector("#pwd2");
 
 function randNum(n) {
-  return Math.floor(Math.random() * n + 1);
+  return Math.floor(Math.random() * n);
 }
 
 function getCharacters() {
