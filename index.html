@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>
+          Generate a password!!
+          <span class="title-random">random password.</span>
+        </h1>
+        <p class="header-description">Never use a unsecure password</p>
+      </header>
+      <main>
+        <section class="generate-option">
+          <button class="generate-password btn">Generate password</button>
+          <label for="number"
+            >Number <input type="checkbox" name="number" id="number"
+          /></label>
+          <label for="symbols"
+            >Symbols <input type="checkbox" name="symbols" id="symbols"
+          /></label>
+          <label for="length"
+            >Length <input type="number" name="length" id="length" min="8"
+          /></label>
+        </section>
+        <section class="password-box">
+          <input type="text" name="password-1" id="pwd1" />
+          <input type="text" name="password-2" id="pwd2" />
+        </section>
+        <hr />
+        <section class="password-copy">
+          <button class="copy-wd-1 btn">Copy Password 1</button>
+          <button class="copy-wd-1 btn">Copy Password 2</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
